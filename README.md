@@ -12,8 +12,8 @@ The repository publishes from `main` at the root folder. To enable Pages in anot
 
 ## Photo credits
 
-- Rose de Minuit: [Unsplash photo by Jessica S.](https://unsplash.com/photos/a-clear-glass-perfume-bottle-on-a-dark-cloth-coi2fv2YUAc)
-- Lumière d’Agrumes: [Unsplash photo by David Valentine](https://unsplash.com/photos/a-hand-holds-a-bottle-of-fragrance-6X7Kdro6V20)
+- Rose de Minuit: [Unsplash photo by anita paterson](https://unsplash.com/photos/clear-perfume-bottle-white-amber-with-green-leaves-Ok9K2G2Pz_w)
+- Lumière d’Agrumes: [Unsplash photo by Kelsey He](https://unsplash.com/photos/clear-glass-fragrance-bottle-mjB-puzIh64)
 - Bois de Santal: [Unsplash photo by Kier in Sight Archives](https://unsplash.com/photos/perfume-bottle-on-a-dark-textured-surface-smVxAu_lqlo)
 
 All three photos are available under the [Unsplash License](https://unsplash.com/license).
