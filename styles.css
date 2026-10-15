@@ -9,7 +9,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
+  background-color: #eee8dd;
 }
 
 .wrapper {
@@ -44,7 +46,7 @@ body {
   border: 0;
 }
 .more:focus-visible + .content {
-  outline: 3px solid #355cc9;
+  outline: 3px solid #65404b;
   outline-offset: 4px;
 }
 .more:checked ~ .content {
@@ -85,7 +87,7 @@ body {
   display: block;
   border-radius: 6px;
   backface-visibility: hidden;
-  background: linear-gradient(40deg, rgba(67, 138, 243, 0.7), rgba(255, 242, 166, 0.7));
+  background: linear-gradient(40deg, rgba(69, 42, 50, 0.58), rgba(197, 166, 126, 0.4));
 }
 .front .inner {
   grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
@@ -126,7 +128,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  color: #355cc9;
+  color: #65404b;
   grid-row: 3;
 }
 .back .info:not(:first-of-type):before {
@@ -142,7 +144,7 @@ body {
   font-weight: 700;
 }
 .back .info i:before {
-  background: linear-gradient(40deg, #355cc9, rgb(67, 138, 243));
+  background: linear-gradient(40deg, #65404b, #b49a79);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -167,13 +169,13 @@ body {
   font-weight: 600;
   line-height: 1.4em;
   overflow: auto;
-  color: #355cc9;
+  color: #65404b;
   padding-right: 10px;
 }
 .back .location,
 .back .price {
   font-weight: 600;
-  color: #355cc9;
+  color: #65404b;
   grid-row: 1;
   font-size: 0.86em;
 }
@@ -215,16 +217,16 @@ body {
   background-color: #fff;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   text-shadow: none;
-  color: #355cc9;
+  color: #65404b;
 }
 .button.return {
   line-height: 3em;
-  color: #355cc9;
-  border-color: #355cc9;
+  color: #65404b;
+  border-color: #65404b;
   text-shadow: none;
 }
 .button.return:hover {
-  background-color: #355cc9;
+  background-color: #65404b;
   color: #fff;
   box-shadow: none;
 }
@@ -238,9 +240,22 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(52.2093561834%, 61.4821676702%, 87.3984869538%);
+  background: #b49a79;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #355cc9;
+  background: #65404b;
+}
+
+@media (max-width: 520px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding: 1em 0;
+  }
+  .card {
+    width: min(420px, 100vw - 2em);
+    height: 340px;
+    margin: 0.6em;
+  }
 }

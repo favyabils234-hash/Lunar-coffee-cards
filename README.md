@@ -1,17 +1,19 @@
-# Naija Table — Nigerian restaurant menu cards
+# Maison Étoile — French perfume cards
 
-A small restaurant landing page based on the original CSS 3D clickable flip-card assignment. It keeps the sample’s card layout, Montserrat type, blue image overlay, and checkbox-driven flip interaction, with Nigerian dishes in place of the apartment listings.
+A small, static perfume collection based on the original CSS 3D clickable flip-card assignment. The design keeps the sample’s card structure, dimensions, Montserrat type and checkbox-driven flip interaction, with a warm ivory page background and restrained plum-and-champagne accents.
 
 ## Run locally
 
-Open `index.html` in a browser. The page is static; there is no build step. `styles.scss` is the source stylesheet and `styles.css` is its browser-ready compiled output.
+Open `index.html` in a browser. This site uses HTML and CSS only; there is no JavaScript. `styles.scss` is the Sass source and `styles.css` is the compiled stylesheet used by the page.
 
 ## GitHub Pages
 
-This repository publishes from `main` at the root folder. To enable it in another repository, open **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`.
+The repository publishes from `main` at the root folder. To enable Pages in another repository, open **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`.
 
 ## Photo credits
 
-- Jollof rice: Chibuzo Nwaneri, [Unsplash photo](https://unsplash.com/photos/a-table-topped-with-plates-of-food-and-a-bowl-of-rice-icciS_O3Gkk), [Unsplash License](https://unsplash.com/license).
-- Egusi soup: Tosan Dudun, [Unsplash photo](https://unsplash.com/photos/hands-holding-a-bowl-of-egusi-soup-with-assorted-meats-0A03YQqU4CU), [Unsplash License](https://unsplash.com/license).
-- Suya: Honeybee5512, [Wikimedia Commons photo](https://commons.wikimedia.org/wiki/File:Nigerian_home_made_suya_and_sliced_onions.png), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Rose de Minuit: [Unsplash photo by Jessica S.](https://unsplash.com/photos/a-clear-glass-perfume-bottle-on-a-dark-cloth-coi2fv2YUAc)
+- Lumière d’Agrumes: [Unsplash photo by David Valentine](https://unsplash.com/photos/a-hand-holds-a-bottle-of-fragrance-6X7Kdro6V20)
+- Bois de Santal: [Unsplash photo by Kier in Sight Archives](https://unsplash.com/photos/perfume-bottle-on-a-dark-textured-surface-smVxAu_lqlo)
+
+All three photos are available under the [Unsplash License](https://unsplash.com/license).
