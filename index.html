@@ -3,106 +3,163 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#eee8dd">
-    <meta name="description" content="Discover three signature fragrances from Maison Étoile, a French perfume house.">
+    <meta name="theme-color" content="#f8edf1">
+    <meta name="description" content="Shop the signature fragrances of Maison Étoile, a French perfume house.">
     <title>Maison Étoile — French Parfums</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
-    <main class="wrapper" aria-label="Maison Étoile fragrance collection">
-        <article class="card">
-            <input type="checkbox" id="card1" class="more" aria-label="Show details for Rose de Minuit">
-            <div class="content">
-                <section class="front" style="background-image: url('rose.jpg')" aria-label="A glass perfume bottle among dark green leaves">
-                    <div class="inner">
-                        <h2>Rose de Minuit</h2>
-                        <div class="rating" aria-label="4 out of 5 stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="Maison Étoile home">
+            <span>Maison Étoile</span>
+            <small>PARIS · DEPUIS 1924</small>
+        </a>
+        <nav class="site-nav" aria-label="Shop navigation">
+            <a href="#">New arrivals</a>
+            <a href="#">Fragrances</a>
+            <a href="#">Our maison</a>
+            <a href="#">Journal</a>
+        </nav>
+        <a class="bag-link" href="#" aria-label="Shopping bag, zero items">
+            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+            <span>Bag (0)</span>
+        </a>
+    </header>
+    <main class="shop">
+        <p class="eyebrow">THE SIGNATURE COLLECTION</p>
+        <h1>Find your fragrance</h1>
+        <section class="wrapper" aria-label="Maison Étoile fragrance collection">
+            <article class="card">
+                <input type="checkbox" id="card1" class="more" aria-label="Show details for Rose de Minuit">
+                <div class="content">
+                    <section class="front" style="background-image: url('rose.jpg')" aria-label="Glass perfume bottle among dark green leaves">
+                        <div class="inner">
+                            <h2>Rose de Minuit</h2>
+                            <div class="rating" aria-label="4 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                            <label for="card1" class="button">Discover</label>
                         </div>
-                        <label for="card1" class="button">Discover</label>
-                    </div>
-                </section>
-                <section class="back">
-                    <div class="inner">
+                    </section>
+                    <section class="back"><div class="inner">
                         <div class="info"><span>50</span><div class="icon"><i class="fas fa-tint"></i><span>ml</span></div></div>
                         <div class="info"><span>20</span><div class="icon"><i class="fas fa-leaf"></i><span>% parfum</span></div></div>
                         <div class="info"><span>8</span><div class="icon"><i class="fas fa-clock"></i><span>hours</span></div></div>
                         <div class="info"><span>4.9</span><div class="icon"><i class="fas fa-star"></i><span>notes</span></div></div>
-                        <div class="description">
-                            <p>A midnight bouquet of velvety rose, bright bergamot and soft amber.</p>
-                            <p>Romantic, warm and quietly unforgettable.</p>
-                        </div>
-                        <div class="location">Maison Étoile · Paris</div>
-                        <div class="price">€92 / 50 ml</div>
+                        <div class="description"><p>A midnight bouquet of velvety rose, bright bergamot and soft amber.</p><p>Romantic, warm and quietly unforgettable.</p></div>
+                        <div class="location">Maison Étoile · Paris</div><div class="price">€92 / 50 ml</div>
                         <label for="card1" class="button return" aria-label="Return to Rose de Minuit"><i class="fas fa-arrow-left"></i></label>
-                    </div>
-                </section>
-            </div>
-        </article>
-
-        <article class="card">
-            <input type="checkbox" id="card2" class="more" aria-label="Show details for Lumière d’Agrumes">
-            <div class="content">
-                <section class="front" style="background-image: url('neroli.jpg')" aria-label="A close view of a glass fragrance bottle">
-                    <div class="inner">
-                        <h2>Lumière d’Agrumes</h2>
-                        <div class="rating" aria-label="5 out of 5 stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div></section>
+                </div>
+            </article>
+            <article class="card">
+                <input type="checkbox" id="card2" class="more" aria-label="Show details for Lumière d’Agrumes">
+                <div class="content">
+                    <section class="front" style="background-image: url('neroli.jpg')" aria-label="A close view of a glass fragrance bottle">
+                        <div class="inner">
+                            <h2>Lumière d’Agrumes</h2>
+                            <div class="rating" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <label for="card2" class="button">Discover</label>
                         </div>
-                        <label for="card2" class="button">Discover</label>
-                    </div>
-                </section>
-                <section class="back">
-                    <div class="inner">
+                    </section>
+                    <section class="back"><div class="inner">
                         <div class="info"><span>50</span><div class="icon"><i class="fas fa-tint"></i><span>ml</span></div></div>
                         <div class="info"><span>18</span><div class="icon"><i class="fas fa-leaf"></i><span>% parfum</span></div></div>
                         <div class="info"><span>7</span><div class="icon"><i class="fas fa-clock"></i><span>hours</span></div></div>
                         <div class="info"><span>5.0</span><div class="icon"><i class="fas fa-star"></i><span>notes</span></div></div>
-                        <div class="description">
-                            <p>Sunlit mandarin and neroli open into delicate orange blossom and cedar.</p>
-                            <p>Fresh, luminous and made for slow afternoons.</p>
-                        </div>
-                        <div class="location">Maison Étoile · Paris</div>
-                        <div class="price">€86 / 50 ml</div>
+                        <div class="description"><p>Sunlit mandarin and neroli open into delicate orange blossom and cedar.</p><p>Fresh, luminous and made for slow afternoons.</p></div>
+                        <div class="location">Maison Étoile · Paris</div><div class="price">€86 / 50 ml</div>
                         <label for="card2" class="button return" aria-label="Return to Lumière d’Agrumes"><i class="fas fa-arrow-left"></i></label>
-                    </div>
-                </section>
-            </div>
-        </article>
-
-        <article class="card">
-            <input type="checkbox" id="card3" class="more" aria-label="Show details for Bois de Santal">
-            <div class="content">
-                <section class="front" style="background-image: url('bois.jpg')" aria-label="A perfume bottle on a dark, textured surface">
-                    <div class="inner">
-                        <h2>Bois de Santal</h2>
-                        <div class="rating" aria-label="5 out of 5 stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div></section>
+                </div>
+            </article>
+            <article class="card">
+                <input type="checkbox" id="card3" class="more" aria-label="Show details for Bois de Santal">
+                <div class="content">
+                    <section class="front" style="background-image: url('bois.jpg')" aria-label="A perfume bottle on a dark, textured surface">
+                        <div class="inner">
+                            <h2>Bois de Santal</h2>
+                            <div class="rating" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <label for="card3" class="button">Discover</label>
                         </div>
-                        <label for="card3" class="button">Discover</label>
-                    </div>
-                </section>
-                <section class="back">
-                    <div class="inner">
+                    </section>
+                    <section class="back"><div class="inner">
                         <div class="info"><span>50</span><div class="icon"><i class="fas fa-tint"></i><span>ml</span></div></div>
                         <div class="info"><span>20</span><div class="icon"><i class="fas fa-leaf"></i><span>% parfum</span></div></div>
                         <div class="info"><span>10</span><div class="icon"><i class="fas fa-clock"></i><span>hours</span></div></div>
                         <div class="info"><span>4.8</span><div class="icon"><i class="fas fa-star"></i><span>notes</span></div></div>
-                        <div class="description">
-                            <p>Creamy sandalwood and vanilla meet a trace of black pepper.</p>
-                            <p>Soft woods and a little Parisian mystery.</p>
-                        </div>
-                        <div class="location">Maison Étoile · Paris</div>
-                        <div class="price">€98 / 50 ml</div>
+                        <div class="description"><p>Creamy sandalwood and vanilla meet a trace of black pepper.</p><p>Soft woods and a little Parisian mystery.</p></div>
+                        <div class="location">Maison Étoile · Paris</div><div class="price">€98 / 50 ml</div>
                         <label for="card3" class="button return" aria-label="Return to Bois de Santal"><i class="fas fa-arrow-left"></i></label>
-                    </div>
-                </section>
-            </div>
-        </article>
+                    </div></section>
+                </div>
+            </article>
+            <article class="card">
+                <input type="checkbox" id="card4" class="more" aria-label="Show details for Iris de Printemps">
+                <div class="content">
+                    <section class="front" style="background-image: url('iris.jpg')" aria-label="Perfume bottle framed by pale pink blossoms">
+                        <div class="inner">
+                            <h2>Iris de Printemps</h2>
+                            <div class="rating" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <label for="card4" class="button">Discover</label>
+                        </div>
+                    </section>
+                    <section class="back"><div class="inner">
+                        <div class="info"><span>50</span><div class="icon"><i class="fas fa-tint"></i><span>ml</span></div></div>
+                        <div class="info"><span>18</span><div class="icon"><i class="fas fa-leaf"></i><span>% parfum</span></div></div>
+                        <div class="info"><span>8</span><div class="icon"><i class="fas fa-clock"></i><span>hours</span></div></div>
+                        <div class="info"><span>4.9</span><div class="icon"><i class="fas fa-star"></i><span>notes</span></div></div>
+                        <div class="description"><p>Powdery iris and violet petals rest on a tender base of white musk.</p><p>Airy, graceful and softly floral.</p></div>
+                        <div class="location">Maison Étoile · Paris</div><div class="price">€89 / 50 ml</div>
+                        <label for="card4" class="button return" aria-label="Return to Iris de Printemps"><i class="fas fa-arrow-left"></i></label>
+                    </div></section>
+                </div>
+            </article>
+            <article class="card">
+                <input type="checkbox" id="card5" class="more" aria-label="Show details for Jardin de Jasmin">
+                <div class="content">
+                    <section class="front" style="background-image: url('jasmin.jpg')" aria-label="Givenchy perfume bottle on soft white fabric">
+                        <div class="inner">
+                            <h2>Jardin de Jasmin</h2>
+                            <div class="rating" aria-label="4 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                            <label for="card5" class="button">Discover</label>
+                        </div>
+                    </section>
+                    <section class="back"><div class="inner">
+                        <div class="info"><span>50</span><div class="icon"><i class="fas fa-tint"></i><span>ml</span></div></div>
+                        <div class="info"><span>18</span><div class="icon"><i class="fas fa-leaf"></i><span>% parfum</span></div></div>
+                        <div class="info"><span>7</span><div class="icon"><i class="fas fa-clock"></i><span>hours</span></div></div>
+                        <div class="info"><span>4.8</span><div class="icon"><i class="fas fa-star"></i><span>notes</span></div></div>
+                        <div class="description"><p>Jasmine petals and ripe pear melt into a gentle trail of vanilla.</p><p>A sunlit garden in the heart of Paris.</p></div>
+                        <div class="location">Maison Étoile · Paris</div><div class="price">€88 / 50 ml</div>
+                        <label for="card5" class="button return" aria-label="Return to Jardin de Jasmin"><i class="fas fa-arrow-left"></i></label>
+                    </div></section>
+                </div>
+            </article>
+            <article class="card">
+                <input type="checkbox" id="card6" class="more" aria-label="Show details for Ambre Rosé">
+                <div class="content">
+                    <section class="front" style="background-image: url('ambre.jpg')" aria-label="Chanel No. 5 perfume bottle resting on golden fabric">
+                        <div class="inner">
+                            <h2>Ambre Rosé</h2>
+                            <div class="rating" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <label for="card6" class="button">Discover</label>
+                        </div>
+                    </section>
+                    <section class="back"><div class="inner">
+                        <div class="info"><span>50</span><div class="icon"><i class="fas fa-tint"></i><span>ml</span></div></div>
+                        <div class="info"><span>22</span><div class="icon"><i class="fas fa-leaf"></i><span>% parfum</span></div></div>
+                        <div class="info"><span>10</span><div class="icon"><i class="fas fa-clock"></i><span>hours</span></div></div>
+                        <div class="info"><span>4.9</span><div class="icon"><i class="fas fa-star"></i><span>notes</span></div></div>
+                        <div class="description"><p>Pink pepper and rose give way to glowing amber and tonka bean.</p><p>Velvety, sensual and made for evening.</p></div>
+                        <div class="location">Maison Étoile · Paris</div><div class="price">€96 / 50 ml</div>
+                        <label for="card6" class="button return" aria-label="Return to Ambre Rosé"><i class="fas fa-arrow-left"></i></label>
+                    </div></section>
+                </div>
+            </article>
+        </section>
     </main>
 </body>
 </html>

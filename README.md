@@ -1,19 +1,22 @@
-# Maison Étoile — French perfume cards
+# Maison Étoile — French perfume shop
 
-A small, static perfume collection based on the original CSS 3D clickable flip-card assignment. The design keeps the sample’s card structure, dimensions, Montserrat type and checkbox-driven flip interaction, with a warm ivory page background and restrained plum-and-champagne accents.
+A static French fragrance shop concept built from the original CSS 3D clickable flip-card assignment. It uses the sample's checkbox-driven card flip interaction, with six perfume cards, a simple shop header, and an elegant blush-pink palette. The site uses HTML and CSS only; there is no JavaScript.
 
 ## Run locally
 
-Open `index.html` in a browser. This site uses HTML and CSS only; there is no JavaScript. `styles.scss` is the Sass source and `styles.css` is the compiled stylesheet used by the page.
+Open `index.html` in a browser. `styles.scss` is the Sass source and `styles.css` is the compiled stylesheet used by the page. The page uses Cormorant Garamond for its elegant display type and DM Sans for supporting text.
 
 ## GitHub Pages
 
-The repository publishes from `main` at the root folder. To enable Pages in another repository, open **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`.
+The repository publishes from `main` at the root folder.
 
 ## Photo credits
 
 - Rose de Minuit: [Unsplash photo by anita paterson](https://unsplash.com/photos/clear-perfume-bottle-white-amber-with-green-leaves-Ok9K2G2Pz_w)
 - Lumière d’Agrumes: [Unsplash photo by Kelsey He](https://unsplash.com/photos/clear-glass-fragrance-bottle-mjB-puzIh64)
 - Bois de Santal: [Unsplash photo by Kier in Sight Archives](https://unsplash.com/photos/perfume-bottle-on-a-dark-textured-surface-smVxAu_lqlo)
+- Iris de Printemps: [Unsplash photo by Camille Paralisan](https://unsplash.com/photos/white-flowers-on-clear-glass-perfume-bottle-LgoehzzFAMA)
+- Jardin de Jasmin: [Unsplash photo by Laura Chouette](https://unsplash.com/photos/clear-glass-perfume-bottle-on-white-textile-ng342AgftvU)
+- Ambre Rosé: [Unsplash photo by Laura Chouette](https://unsplash.com/photos/clear-glass-perfume-bottle-on-white-textile-PBFEDEAkp9M)
 
-All three photos are available under the [Unsplash License](https://unsplash.com/license).
+All photographs are available under the [Unsplash License](https://unsplash.com/license).

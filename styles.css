@@ -4,28 +4,97 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  color: #74374f;
+  background: #fbf3f6;
+}
+
+.site-header {
+  min-height: 88px;
+  padding: 0.9rem clamp(1.2rem, 5vw, 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: rgba(255, 251, 252, 0.94);
+  border-bottom: 1px solid #efdce4;
+  color: #74374f;
+}
+.site-header a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-header .brand {
   display: flex;
   flex-direction: column;
+  line-height: 1;
+  white-space: nowrap;
+}
+.site-header .brand span {
+  font: 600 2rem/0.95 "Cormorant Garamond", serif;
+  color: #b24e78;
+}
+.site-header .brand small {
+  margin-top: 0.45rem;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+}
+.site-header .site-nav {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  background-color: #eee8dd;
+  gap: clamp(1rem, 2.5vw, 2.5rem);
+}
+.site-header .site-nav a {
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.site-header .site-nav a:hover, .site-header .bag-link:hover {
+  color: #d27a9e;
+}
+.site-header .bag-link {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.shop {
+  padding: 2.4rem 1.25rem 3.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.3rem;
+  color: #b24e78;
+  font-size: 0.68rem;
+  letter-spacing: 0.26em;
+}
+
+h1 {
+  margin: 0 0 1.7rem;
+  color: #74374f;
+  font: 500 clamp(2.5rem, 5vw, 3.7rem)/1.05 "Cormorant Garamond", serif;
 }
 
 .wrapper {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 420px));
   justify-content: center;
+  gap: 1.5rem;
+  max-width: 1392px;
+  margin: 0 auto;
 }
 
 .card {
-  width: 420px;
+  width: 100%;
   height: 340px;
-  margin: 1em;
   perspective: 1500px;
 }
+
 .card .content {
   position: relative;
   width: 100%;
@@ -46,26 +115,23 @@ body {
   border: 0;
 }
 .more:focus-visible + .content {
-  outline: 3px solid #65404b;
-  outline-offset: 4px;
+  outline: 3px solid #b24e78;
+  outline-offset: 5px;
 }
 .more:checked ~ .content {
   transform: rotateY(180deg);
 }
 
-.front,
-.back {
+.front, .back {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border-radius: 6px;
+  border-radius: 5px;
 }
-.front .inner,
-.back .inner {
+.front .inner, .back .inner {
   height: 100%;
   display: grid;
   padding: 1.5em;
@@ -73,21 +139,18 @@ body {
 }
 
 .front {
-  background-color: #fff;
+  background-color: #f4dce5;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 .front:after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   display: block;
-  border-radius: 6px;
+  border-radius: 5px;
   backface-visibility: hidden;
-  background: linear-gradient(40deg, rgba(69, 42, 50, 0.58), rgba(197, 166, 126, 0.4));
+  background: linear-gradient(35deg, rgba(97, 39, 62, 0.56), rgba(208, 133, 158, 0.12) 75%);
 }
 .front .inner {
   grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
@@ -95,19 +158,19 @@ body {
 }
 .front h2 {
   grid-row: 2;
-  margin-bottom: 0.3em;
+  margin: 0 0 0.3em;
+  color: #fffafa;
+  font: 500 clamp(1.25rem, 2vw, 1.7rem)/1.1 "Cormorant Garamond", serif;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fff;
-  font-weight: 500;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 8px rgba(72, 24, 45, 0.45);
 }
 .front .rating {
   grid-row: 3;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
   display: flex;
   flex-flow: row nowrap;
+  color: #ffe3a8;
+  font-size: 13px;
 }
 .front .rating i {
   margin: 0 1px;
@@ -115,8 +178,8 @@ body {
 
 .back {
   transform: rotateY(180deg);
-  background-color: #fff;
-  border: 2px solid rgb(240, 240, 240);
+  background: #fffafb;
+  border: 1px solid #ecd2dc;
 }
 .back .inner {
   grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
@@ -126,10 +189,10 @@ body {
 }
 .back .info {
   position: relative;
+  grid-row: 3;
   display: flex;
   align-items: center;
-  color: #65404b;
-  grid-row: 3;
+  color: #b24e78;
 }
 .back .info:not(:first-of-type):before {
   content: "";
@@ -137,47 +200,49 @@ body {
   left: -0.9em;
   height: 18px;
   width: 1px;
-  background-color: #ccc;
+  background: #ead2dc;
 }
 .back .info span {
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 1.65em;
+  font-weight: 600;
 }
 .back .info i:before {
-  background: linear-gradient(40deg, #65404b, #b49a79);
+  background: linear-gradient(40deg, #b24e78, #d997b1);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-.back .info i {
-  font-size: 1.2em;
 }
 .back .info .icon {
   margin-left: 0.3em;
 }
+.back .info .icon i {
+  font-size: 1.05em;
+}
 .back .info .icon span {
   display: block;
   margin-top: -0.25em;
-  font-size: 0.8em;
+  font-size: 0.68em;
   font-weight: 600;
   white-space: nowrap;
 }
 .back .description {
   grid-row: 5;
   grid-column: 1/-1;
-  font-size: 0.86em;
-  border-radius: 5px;
-  font-weight: 600;
-  line-height: 1.4em;
+  align-self: center;
+  max-height: 100%;
   overflow: auto;
-  color: #65404b;
   padding-right: 10px;
+  border-radius: 5px;
+  color: #74374f;
+  font: 500 0.92em/1.55 "DM Sans", sans-serif;
 }
-.back .location,
-.back .price {
-  font-weight: 600;
-  color: #65404b;
+.back .description p {
+  margin: 0 0 0.8em;
+}
+.back .location, .back .price {
   grid-row: 1;
-  font-size: 0.86em;
+  color: #74374f;
+  font-size: 0.75em;
+  font-weight: 600;
 }
 .back .location {
   grid-column: 1/3;
@@ -186,6 +251,7 @@ body {
 .back .price {
   grid-column: 3/-1;
   justify-self: right;
+  white-space: nowrap;
 }
 .back .button {
   grid-column: 1/-1;
@@ -194,40 +260,39 @@ body {
 
 .button {
   grid-row: -1;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-  cursor: pointer;
   display: block;
-  padding: 0 1.5em;
-  height: 3em;
-  line-height: 2.9em;
   min-width: 3em;
-  background-color: transparent;
-  border: solid 2px #fff;
+  height: 3em;
+  padding: 0 1.5em;
+  border: 1px solid #fff7fa;
+  border-radius: 3px;
+  background: rgba(116, 55, 79, 0.26);
   color: #fff;
-  border-radius: 4px;
   text-align: center;
-  left: 50%;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 2.9em;
+  cursor: pointer;
   backface-visibility: hidden;
-  transition: 0.3s ease-in-out;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: 0.25s ease-in-out;
 }
 .button:hover {
-  background-color: #fff;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  text-shadow: none;
-  color: #65404b;
+  background: #fffafb;
+  color: #b24e78;
+  box-shadow: 0 5px 20px rgba(72, 24, 45, 0.14);
 }
 .button.return {
-  line-height: 3em;
-  color: #65404b;
-  border-color: #65404b;
+  border-color: #b24e78;
+  background: transparent;
+  color: #b24e78;
   text-shadow: none;
 }
 .button.return:hover {
-  background-color: #65404b;
-  color: #fff;
+  background: #b24e78;
+  color: white;
   box-shadow: none;
 }
 
@@ -236,26 +301,46 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #fff0f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b49a79;
+  background: #d28aa5;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #65404b;
+@media (max-width: 980px) {
+  .wrapper {
+    grid-template-columns: repeat(2, minmax(0, 420px));
+  }
 }
-
-@media (max-width: 520px) {
-  body {
-    height: auto;
-    min-height: 100vh;
-    padding: 1em 0;
+@media (max-width: 680px) {
+  .site-header {
+    padding: 0.8rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .site-header .brand span {
+    font-size: 1.7rem;
+  }
+  .site-header .site-nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f1e1e7;
+  }
+  .site-header .site-nav a {
+    font-size: 0.72rem;
+  }
+  .shop {
+    padding-top: 2rem;
+  }
+  .wrapper {
+    grid-template-columns: minmax(0, 420px);
+    gap: 1rem;
   }
   .card {
-    width: min(420px, 100vw - 2em);
-    height: 340px;
-    margin: 0.6em;
+    height: 320px;
   }
 }
