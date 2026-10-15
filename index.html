@@ -1,69 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f0e7">
-  <meta name="description" content="Meet the little rituals that make a better morning. Discover Solstice small-batch coffee, one flip at a time.">
-  <title>Solstice — Find your morning ritual</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="A taste of home: Nigerian jollof, suya and egusi made fresh at Naija Table.">
+    <title>Naija Table — Nigerian food, made with heart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="wordmark" href="#home" aria-label="Solstice home"><span class="sun-mark" aria-hidden="true">✳</span> solstice<span class="wordmark-period">.</span></a>
-    <nav aria-label="Main navigation"><a href="#rituals">The collection</a><a href="#story">Our promise</a></nav>
-    <a class="top-link" href="#rituals">Find your blend <span aria-hidden="true">↗</span></a>
-  </header>
-
-  <main id="home">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> GOOD THINGS TAKE ROOT</p>
-        <h1 id="hero-title">A brighter kind<br>of <em>everyday.</em></h1>
-        <p class="hero-intro">Small-batch coffee for slow mornings, open windows, and whatever comes next.</p>
-        <a class="button button-dark" href="#rituals">Meet your morning <span aria-hidden="true">↓</span></a>
-        <div class="hero-foot"><span class="avatar-stack" aria-hidden="true"><i>J</i><i>M</i><i>A</i></span><span>Loved by 2,400+ slow-morning people</span></div>
-      </div>
-      <div class="hero-art" role="img" aria-label="Illustration of a steaming cup of coffee in morning sunlight">
-        <div class="art-sun"></div><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span>
-        <div class="art-leaf leaf-left">✳</div><div class="art-leaf leaf-right">✳</div>
-        <div class="coffee-cup"><div class="cup-steam steam-one"></div><div class="cup-steam steam-two"></div><div class="cup-rim"></div><div class="cup-body"><span class="cup-logo">s.</span></div><div class="cup-handle"></div><div class="cup-shadow"></div></div>
-        <div class="art-caption"><span>01 / 03</span><span>MADE FOR THE IN-BETWEEN</span></div>
-        <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✳</span>
-      </div>
-    </section>
-
-    <section class="collection" id="rituals" aria-labelledby="collection-title">
-      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR DAILY LITTLE LUXURY</p><h2 id="collection-title">Three ways to <em>wake up.</em></h2></div><p>Meet the blend that fits your kind of morning.<br>Tap a card to get to know it.</p></div>
-      <div class="cards">
-        <article class="product-card card-amber" data-card>
-          <button class="flip-card" type="button" aria-pressed="false" aria-label="Learn about First Light coffee">
-            <span class="card-face card-front"><span class="card-topline"><span>01 — THE GENTLE ONE</span><span class="flip-hint">FLIP IT <b>↗</b></span></span><span class="product-art art-first"><span class="art-disc"></span><span class="bean bean-a">✦</span><span class="bean bean-b">✦</span><span class="package"><span class="pack-seal">S</span><span class="pack-name">first<br>light</span><span class="pack-foot">COLOMBIA · HONEY PROCESS</span></span><span class="mini-cup">☕</span></span><span class="card-bottom"><span><span class="roast-label">LIGHT ROAST</span><strong>First Light</strong></span><span class="card-arrow" aria-hidden="true">↗</span></span></span>
-            <span class="card-face card-back"><span class="back-index">01 / FIRST LIGHT</span><span class="back-icon">☼</span><strong>For the soft start.</strong><span class="back-copy">Orange blossom, ripe peach, and a little honey. A gentle Colombian cup that lets the day arrive in its own time.</span><span class="tasting-note"><b>THE FEELING</b><span>Sun through the curtains</span></span><span class="back-cta">A brighter first sip <span>↗</span></span></span>
-          </button>
+    <main class="wrapper" aria-label="Naija Table menu">
+        <article class="card">
+            <input type="checkbox" id="card1" class="more" aria-label="Show details for Lagos party jollof">
+            <div class="content">
+                <section class="front" style="background-image: url('assets/jollof.jpg')" aria-label="Lagos party jollof with chicken and plantain">
+                    <div class="inner">
+                        <h2>Lagos party jollof</h2>
+                        <div class="rating" aria-label="4 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <label for="card1" class="button">Menu details</label>
+                    </div>
+                </section>
+                <section class="back">
+                    <div class="inner">
+                        <div class="info"><span>4.5</span><div class="icon"><i class="fas fa-coins"></i><span>k naira</span></div></div>
+                        <div class="info"><span>1</span><div class="icon"><i class="fas fa-utensils"></i><span>plate</span></div></div>
+                        <div class="info"><span>2/5</span><div class="icon"><i class="fas fa-pepper-hot"></i><span>heat</span></div></div>
+                        <div class="info"><span>4.9</span><div class="icon"><i class="fas fa-star"></i><span>loved</span></div></div>
+                        <div class="description">
+                            <p>Smoky, slow-cooked party jollof with tender chicken and sweet fried plantain.</p>
+                            <p>Made with ripe tomatoes, red pepper, thyme and bay leaf. A little heat, plenty of flavour.</p>
+                        </div>
+                        <div class="location">Lagos, Nigeria</div>
+                        <div class="price">₦4,500 / plate</div>
+                        <label for="card1" class="button return" aria-label="Return to Lagos party jollof"><i class="fas fa-arrow-left"></i></label>
+                    </div>
+                </section>
+            </div>
         </article>
-        <article class="product-card card-sage" data-card>
-          <button class="flip-card" type="button" aria-pressed="false" aria-label="Learn about Daydream coffee">
-            <span class="card-face card-front"><span class="card-topline"><span>02 — THE DAYDREAMER</span><span class="flip-hint">FLIP IT <b>↗</b></span></span><span class="product-art art-day"><span class="art-disc"></span><span class="bean bean-a">✦</span><span class="bean bean-b">✦</span><span class="package"><span class="pack-seal">S</span><span class="pack-name">day<br>dream</span><span class="pack-foot">GUATEMALA · WASHED</span></span><span class="mini-cup">☕</span></span><span class="card-bottom"><span><span class="roast-label">MEDIUM ROAST</span><strong>Daydream</strong></span><span class="card-arrow" aria-hidden="true">↗</span></span></span>
-            <span class="card-face card-back"><span class="back-index">02 / DAYDREAM</span><span class="back-icon">☁</span><strong>For the curious mind.</strong><span class="back-copy">Cocoa nib, sweet citrus, and toasted almond. A balanced Guatemalan cup for ideas that need a little room.</span><span class="tasting-note"><b>THE FEELING</b><span>A window left open</span></span><span class="back-cta">Make space to wander <span>↗</span></span></span>
-          </button>
-        </article>
-        <article class="product-card card-rose" data-card>
-          <button class="flip-card" type="button" aria-pressed="false" aria-label="Learn about After Hours coffee">
-            <span class="card-face card-front"><span class="card-topline"><span>03 — THE NIGHT OWL</span><span class="flip-hint">FLIP IT <b>↗</b></span></span><span class="product-art art-after"><span class="art-disc"></span><span class="bean bean-a">✦</span><span class="bean bean-b">✦</span><span class="package"><span class="pack-seal">S</span><span class="pack-name">after<br>hours</span><span class="pack-foot">BRAZIL · NATURAL</span></span><span class="mini-cup">☕</span></span><span class="card-bottom"><span><span class="roast-label">DARK ROAST</span><strong>After Hours</strong></span><span class="card-arrow" aria-hidden="true">↗</span></span></span>
-            <span class="card-face card-back"><span class="back-index">03 / AFTER HOURS</span><span class="back-icon">☾</span><strong>For the last good thought.</strong><span class="back-copy">Dark chocolate, dried cherry, and warm spice. A round Brazilian roast made for lingering a little longer.</span><span class="tasting-note"><b>THE FEELING</b><span>One more chapter</span></span><span class="back-cta">Stay for one more cup <span>↗</span></span></span>
-          </button>
-        </article>
-      </div>
-      <p class="tap-note"><span>✳</span> Each bag is roasted in small batches and shipped within 48 hours.</p>
-    </section>
 
-    <section class="promise" id="story"><span class="promise-mark" aria-hidden="true">✳</span><p>Good coffee should leave the world a little better than it found it.</p><a href="#home">GROWN WITH CARE, ROASTED WITH INTENTION <span>↗</span></a></section>
-  </main>
-  <footer><a class="wordmark" href="#home"><span class="sun-mark" aria-hidden="true">✳</span> solstice<span class="wordmark-period">.</span></a><span>For the moments that are yours.</span><span>© SOLSTICE COFFEE CO. 2026</span></footer>
-  <script src="script.js"></script>
+        <article class="card">
+            <input type="checkbox" id="card2" class="more" aria-label="Show details for suya beef skewers">
+            <div class="content">
+                <section class="front" style="background-image: url('assets/suya.png')" aria-label="Nigerian suya with sliced onions">
+                    <div class="inner">
+                        <h2>Suya beef skewers</h2>
+                        <div class="rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <label for="card2" class="button">Menu details</label>
+                    </div>
+                </section>
+                <section class="back">
+                    <div class="inner">
+                        <div class="info"><span>3.8</span><div class="icon"><i class="fas fa-coins"></i><span>k naira</span></div></div>
+                        <div class="info"><span>4</span><div class="icon"><i class="fas fa-utensils"></i><span>sticks</span></div></div>
+                        <div class="info"><span>4/5</span><div class="icon"><i class="fas fa-pepper-hot"></i><span>heat</span></div></div>
+                        <div class="info"><span>4.8</span><div class="icon"><i class="fas fa-star"></i><span>loved</span></div></div>
+                        <div class="description">
+                            <p>Char-grilled beef dusted in yaji, served with sliced onions and fresh tomato.</p>
+                            <ul>
+                                <li>Smoky, savoury and boldly spiced.</li>
+                                <li>Ask us to turn the heat up or down.</li>
+                                <li>Best enjoyed straight from the grill.</li>
+                            </ul>
+                        </div>
+                        <div class="location">Northern Nigerian style</div>
+                        <div class="price">₦3,800 / serving</div>
+                        <label for="card2" class="button return" aria-label="Return to suya beef skewers"><i class="fas fa-arrow-left"></i></label>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <article class="card">
+            <input type="checkbox" id="card3" class="more" aria-label="Show details for egusi and pounded yam">
+            <div class="content">
+                <section class="front" style="background-image: url('assets/egusi.jpg')" aria-label="A bowl of Nigerian egusi soup">
+                    <div class="inner">
+                        <h2>Egusi &amp; pounded yam</h2>
+                        <div class="rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <label for="card3" class="button">Menu details</label>
+                    </div>
+                </section>
+                <section class="back">
+                    <div class="inner">
+                        <div class="info"><span>6.5</span><div class="icon"><i class="fas fa-coins"></i><span>k naira</span></div></div>
+                        <div class="info"><span>1</span><div class="icon"><i class="fas fa-utensils"></i><span>plate</span></div></div>
+                        <div class="info"><span>3/5</span><div class="icon"><i class="fas fa-pepper-hot"></i><span>heat</span></div></div>
+                        <div class="info"><span>4.9</span><div class="icon"><i class="fas fa-star"></i><span>loved</span></div></div>
+                        <div class="description">
+                            <p>Rich egusi soup simmered with leafy greens and assorted meat, served with soft pounded yam.</p>
+                            <p>Comforting, hearty and made fresh each day. Ask about today’s protein selection.</p>
+                        </div>
+                        <div class="location">A taste of home</div>
+                        <div class="price">₦6,500 / plate</div>
+                        <label for="card3" class="button return" aria-label="Return to egusi and pounded yam"><i class="fas fa-arrow-left"></i></label>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
