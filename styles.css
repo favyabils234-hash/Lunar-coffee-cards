@@ -182,80 +182,22 @@ h1 {
   border: 1px solid #ecd2dc;
 }
 .back .inner {
-  grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
-  grid-template-columns: repeat(4, auto);
-  grid-column-gap: 0.8em;
-  justify-items: center;
-}
-.back .info {
-  position: relative;
-  grid-row: 3;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  color: #b24e78;
-}
-.back .info:not(:first-of-type):before {
-  content: "";
-  position: absolute;
-  left: -0.9em;
-  height: 18px;
-  width: 1px;
-  background: #ead2dc;
-}
-.back .info span {
-  font-size: 1.65em;
-  font-weight: 600;
-}
-.back .info i:before {
-  background: linear-gradient(40deg, #b24e78, #d997b1);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-.back .info .icon {
-  margin-left: 0.3em;
-}
-.back .info .icon i {
-  font-size: 1.05em;
-}
-.back .info .icon span {
-  display: block;
-  margin-top: -0.25em;
-  font-size: 0.68em;
-  font-weight: 600;
-  white-space: nowrap;
+  justify-content: center;
+  gap: 1.2rem;
+  text-align: center;
 }
 .back .description {
-  grid-row: 5;
-  grid-column: 1/-1;
-  align-self: center;
-  max-height: 100%;
+  max-height: 72%;
   overflow: auto;
-  padding-right: 10px;
-  border-radius: 5px;
+  padding: 0 0.5rem;
   color: #74374f;
-  font: 500 0.92em/1.55 "DM Sans", sans-serif;
+  font: 500 1.45rem/1.5 "Dancing Script", cursive;
 }
 .back .description p {
   margin: 0 0 0.8em;
-}
-.back .location, .back .price {
-  grid-row: 1;
-  color: #74374f;
-  font-size: 0.75em;
-  font-weight: 600;
-}
-.back .location {
-  grid-column: 1/3;
-  justify-self: left;
-}
-.back .price {
-  grid-column: 3/-1;
-  justify-self: right;
-  white-space: nowrap;
-}
-.back .button {
-  grid-column: 1/-1;
-  justify-self: center;
 }
 
 .button {
@@ -306,6 +248,13 @@ h1 {
 
 ::-webkit-scrollbar-thumb {
   background: #d28aa5;
+}
+
+.site-footer {
+  padding: 1.5rem 1rem 2.5rem;
+  color: #b24e78;
+  text-align: center;
+  font: 500 1.25rem "Cormorant Garamond", serif;
 }
 
 @media (max-width: 980px) {

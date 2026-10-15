@@ -1,6 +1,6 @@
 # Maison Étoile — French perfume shop
 
-A static French fragrance shop concept built from the original CSS 3D clickable flip-card assignment. It uses the sample's checkbox-driven card flip interaction, with six perfume cards, a simple shop header, and an elegant blush-pink palette. The site uses HTML and CSS only; there is no JavaScript.
+A static French fragrance shop concept built from the original CSS 3D clickable flip-card assignment. It uses the sample's checkbox-driven card flip interaction, with six perfume cards, in-page shop navigation, and an elegant blush-pink palette. The reverse sides show only a cursive fragrance description and a plain-text Back control. The site uses HTML and CSS only; there is no JavaScript.
 
 ## Run locally
 
